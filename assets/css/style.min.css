@@ -3,3 +3,19 @@ video{
     max-width: 100%;
     height: auto;
 }
+.whatsapp {
+    display: inline;
+    position: fixed;
+    padding: 2em;
+    bottom:65px;
+    z-index: 999;
+    text-align: center;
+    float: right;
+    right: 1px;
+    margin-bottom: 2em;
+    transition:all .5s ease-in-out;
+  }
+  .whatsapp :hover {
+        -webkit-transform:scale(1.3);transform:scale(1.3);
+  }
+  
