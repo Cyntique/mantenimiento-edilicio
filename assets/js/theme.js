@@ -4,7 +4,7 @@
        
   // PRELOADER
     $(window).on('load', function() {
-        $('#page-loader').fadeOut('slow', function() {
+        $('#page-loader').fadeOut('medium', function() {
             $(this).remove();
         });
     });
@@ -61,7 +61,7 @@
 })(jQuery); // End of use strict
 $(function() {
 var selectedClass = "";
-$(".filter").click(function(){
+$(".filter").trigger(function(){
 selectedClass = $(this).attr("data-rel");
 $("#gallery").fadeTo(100, 0.1);
 $("#gallery div").not("."+selectedClass).fadeOut().removeClass('animation');
